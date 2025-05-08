@@ -9,6 +9,9 @@ class QZ_ResolutionPreset:
     def INPUT_TYPES(cls):
         return {
             "required": {
+                "use_custom_size": ("BOOLEAN", {"default": False}),
+                "custom_width": ("INT", {"default": 1024, "min": 1, "max": 16384, "step": 1}),
+                "custom_height": ("INT", {"default": 1024, "min": 1, "max": 16384, "step": 1}),
                 "preset_size": (
                     ["7680x4320 (8K横屏)", "5760x3240 (6K横屏)", "3840x2160 (4K横屏UHD)", "1920x1080 (横屏FHD)", "1280x720 (横屏HD)",
                      "960x544 (横屏)", "832x480 (横屏)", "768x432 (横屏)", 
@@ -25,7 +28,10 @@ class QZ_ResolutionPreset:
     RETURN_NAMES = ("width", "height")
     FUNCTION = "get_size"
 
-    def get_size(self, preset_size):
+    def get_size(self, use_custom_size, custom_width, custom_height, preset_size):
+        if use_custom_size:
+            return (custom_width, custom_height)
+        
         # 预设尺寸映射
         size_map = {
             "7680x4320 (8K横屏)": (7680, 4320),
