@@ -22,10 +22,10 @@ It is possible to customise the input resolution, but be careful to tick Use Cus
 
 QZ_WanFrame:万相帧运算
 
-<img width="2238" height="1059" alt="wechat_2025-09-28_133722_086" src="https://github.com/user-attachments/assets/01afa614-550d-47a4-8f21-5e3dca61fd43" />
+<img width="2157" height="1212" alt="wechat_2025-10-17_173043_707" src="https://github.com/user-attachments/assets/4dd1e4da-6561-4a0e-b61c-4494e991be95" />
 
-For the commonly used multiples of 4+1 in WAN, only the frame multiplier needs to be modified for daily use.
-针对wan常用的4的倍数+1，日常只需要修改帧倍数就可以了。
+For the commonly used multiples of 4+1 in WAN, 4 can be left unchanged and only the frame multiplier needs to be modified. You can also select 'Enable' to customize the input frame rate.
+针对wan常用的4的倍数+1，4可以不动只需要修改帧倍数就可以了。也可以勾选启用，自定义输入帧数。
 
 QZ_FrameHold：视频关键帧提取
 
