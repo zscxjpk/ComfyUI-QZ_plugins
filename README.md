@@ -27,6 +27,14 @@ QZ_WanFrame:万相帧运算
 For the commonly used multiples of 4+1 in WAN, only the frame multiplier needs to be modified for daily use.
 针对wan常用的4的倍数+1，日常只需要修改帧倍数就可以了。
 
+QZ_FrameHold：视频关键帧提取
+
+<img width="2430" height="1230" alt="wechat_2025-10-17_172059_547" src="https://github.com/user-attachments/assets/3ef88e71-fce3-492f-af66-0bed2f35b884" />
+
+Extract keyframes from the video, customize the number of frames to be extracted, and directly obtain the corresponding static image.
+提取视频中的关键帧，自定义输入想要提取的帧数，直接得到对应的静态图像。
+
+
 联系作者：
 B站：https://space.bilibili.com/412411578?spm_id_from=333.1007.0.0
 
